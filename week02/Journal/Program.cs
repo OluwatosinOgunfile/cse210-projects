@@ -106,3 +106,12 @@ class Program
     }
 
 }
+
+// Stretch Requirements
+// 1. Display message when there is no journal entry to display.
+// 2. The journal entries list is emptied when entries are saved.
+// 3. When quitting, check and warn if the journal entries list is not empty. (i.e. unsaved entries)
+// 4. Display message when there is no entry to save (journal entry list is empty)
+// 5. Display message when the file to save to does not exist.
+// 6. When a filename is entered to save to, check if it exists first. If it exists, add the entries
+//    to the file. If the file does not exist, ask if to create it and add the entries.
