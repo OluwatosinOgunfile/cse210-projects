@@ -11,6 +11,8 @@ public class Entry
     }
     public void Display()
     {
-
+        Console.WriteLine($"\n\tDate: {_date}");
+        Console.WriteLine($"\tPrompt: {_promptText}");
+        Console.WriteLine($"\tEntry: {_entryText}");
     }
 }
