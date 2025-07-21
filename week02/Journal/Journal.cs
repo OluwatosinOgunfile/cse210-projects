@@ -1,5 +1,3 @@
-using System;
-using System.IO;
 public class Journal
 {
     public List<Entry> _entries = new List<Entry>();
@@ -70,7 +68,7 @@ public class Journal
 
     }
 
-    public void SaveToFile(string file)
+    public void SaveToFile()
     {
         if (_entries.Count == 0)
         {
@@ -125,7 +123,7 @@ public class Journal
 
     }
 
-    public void LoadFromFile(string file)
+    public void LoadFromFile()
     {
         Console.Write("\n\tEnter the filename to load: ");
         string userInput = Console.ReadLine();

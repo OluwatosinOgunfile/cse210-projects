@@ -27,6 +27,7 @@ class Program
                     jrnl.AddEntry();
 
                     // add entry into journal
+                    Entry entry = new Entry();
                     jrnl._entries.Add(entry);
 
                     break;
@@ -48,7 +49,7 @@ class Program
                 case 5:
                     // Exit the program
                     // check if unsaved entries exist
-                    if (!(jrnl._jrnl.Count == 0))
+                    if (!(jrnl._entries.Count == 0))
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.Write($"\tYou have unsaved journal entries. Save them before exiting (y or n)? ");
@@ -56,7 +57,7 @@ class Program
                         string userResp = Console.ReadLine();
                         if ((userResp == "y") || (userResp == "Y"))
                         {
-                            jrnl.SaveJrnlFile();
+                            jrnl.SaveToFile();
                             Console.WriteLine("\n\tThank you and Goodbye!\n");
                             System.Environment.Exit(0);
                         }
