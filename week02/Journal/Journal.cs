@@ -30,7 +30,7 @@ public class Journal
     }
 
     private static PromptGenerator jp = new PromptGenerator();
-    public void AddEntry()
+    public Entry AddEntry()
     {
         string dateInfo = GetTimeStamp();
 
@@ -45,6 +45,8 @@ public class Journal
         entry._date = dateInfo;
         entry._promptText = prompt;
         entry._entryText = userEntry;
+
+        return entry;
 
     }
 

@@ -24,10 +24,9 @@ class Program
             {
                 case 1:
                     // Write journal Entry
-                    jrnl.AddEntry();
+                    Entry entry = jrnl.AddEntry();
 
                     // add entry into journal
-                    Entry entry = new Entry();
                     jrnl._entries.Add(entry);
 
                     break;
