@@ -82,7 +82,7 @@ public class Journal
         {
             Console.Write("\n\tEnter filename to save to: ");
             string userInput = Console.ReadLine();
-            _userFileName = userInput + ".txt";
+            _userFileName = userInput;
 
             if (File.Exists(_userFileName))
             {
@@ -129,7 +129,7 @@ public class Journal
     {
         Console.Write("\n\tEnter the filename to load: ");
         string userInput = Console.ReadLine();
-        _userFileName = userInput + ".txt";
+        _userFileName = userInput;
         if (File.Exists(_userFileName))
         {
             if (_userFileName.Length > 0)
